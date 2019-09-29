@@ -1,0 +1,17 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    # template:
+    #   default-topic: 'pk-test1'
+kafka:
+  topics:
+    -
+      name: 'pk-test1'
+      num-partitions: 1
+      replication-factor: 1
+    -
+      name: 'pk-test2'
+      num-partitions: 2
+      replication-factor: 1
+server:
+  port: 8081
